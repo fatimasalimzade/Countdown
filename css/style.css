@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body {
+    overflow: hidden;
+}
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/abstract\ pink\ blue\ dark\ blurred\ background\,\ smooth\ gradient\ texture\ color\,\ shiny\ bright\ website\ pattern\,\ banner\ header\ or\ sidebar\ graphic\ art\ image.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-fluid h1 span {
+    color: rgb(219, 121, 248);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.num {
+    font-size: 50px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.right img {
+    width: 30%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    animation: moveUp 3s linear infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        bottom: -50%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .right img {
+        transform: rotate(-25deg);
+    }
+    @keyframes moveUp {
+        0%{
+            right: -200px;
+            opacity: 0;
+        }
+    
+        100%{
+            bottom: 105%;
+            opacity: 1;
+        }
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    .container-fluid h1 span {
+        color: rgb(119, 22, 144);
+    }
+}
